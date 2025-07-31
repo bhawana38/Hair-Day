@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang en>
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <title>HAIR DAY</title>
+            <meta name="description" content="Official website for Hair Day booking page">
+            <meta name="author" content="Hair Day Salon">
+
+            <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="logos\Artboard 1.png" alt="logo" width="180">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="booking.html">BOOKING NOW</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="about_us.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h3 id="promo">book today to get 20% off use promocode: AUG25</h3>
+            <form>
+                <div>
+                    <fieldset> 
+                        <legend>Personal Info</legend> 
+                        <label for="fname">First name:</label><br> 
+                        <input type="text" id="fname" name="fname" value="John"><br> 
+                        <label for="lname">Last name:</label><br> 
+                        <input type="text" id="lname" name="lname" value="Doe"><br> 
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset> 
+                        <legend>Details</legend> 
+                        <label class="box" for="gender">Select your gender:</label><br> 
+                        <select class="box" id="gender" name="mylist"> 
+                        <option value="m">Male</option> 
+                        <option value="f">Female</option> 
+                        <option value="o">Rather not say</option> 
+                        </select><br> 
+                        <label for="email_address">Email Address</label><br>
+                    <input type="email" id="email_address" name="email_address"> 
+                    </fieldset>
+                </div>
+                <div>
+                    <label for="booking_date">Date of Booking</label><br>
+                    <input type="date" id="booking_date" name="booking_date">   
+                </div>
+                <div>
+                <label for="service">Select a service :</label><br> 
+                <input list="services" name="service"> 
+                <datalist class="box" id="services"> 
+                    <option value="Hair Cut"> 
+                    <option value="Hair Colour"> 
+                    <option value="Hair styling"> 
+                    <option value="Manicure"> 
+                    <option value="Makeover"> 
+                </datalist>
+                </div>
+                <div>
+                    <label>I agree to the cancellation policy</label>
+                    <input type="checkbox" id="agree" name="agree" required> 
+                </div>
+                <button type="submit">Book Now</button>
+            </form>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <img src="logos\Artboard 22.png" alt="small logo" width="200">
+            </div>
+            <div>
+                <p>Copyright Hair Day</p>
+            </div>
+        </footer>
+    </body>
+</html>
